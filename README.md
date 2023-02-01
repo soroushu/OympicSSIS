@@ -1,2 +1,2 @@
 # OympicSSIS
-Olymoic Task
+Olympic Task
