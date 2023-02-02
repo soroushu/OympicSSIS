@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="58"
-  DTS:VersionGUID="{00E3AE2D-750F-4657-A69C-952510090834}">
+  DTS:VersionBuild="71"
+  DTS:VersionGUID="{3B72D1B2-D306-4607-BAB0-36188DE3B341}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -68,6 +68,236 @@
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager - Summer]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{661C6FA1-79A3-4529-8F01-2DA0135A39E8}"
+      DTS:ObjectName="Flat File Connection Manager - Summer">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x002C_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="D:\DU\soroushu\OympicSSIS\OlympicTask\Data\summerNew.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Year"
+              DTS:DTSID="{CA0713C6-4DD4-4E95-B958-9B75A73CDFB1}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="City"
+              DTS:DTSID="{2101D0A6-BB72-4EFD-AC94-39F5E5B7233E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="13"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Sport"
+              DTS:DTSID="{35A7D12F-B23E-4462-885E-B693EB80F201}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="15"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Discipline"
+              DTS:DTSID="{23DF3622-058E-4E58-8376-35A9A762E49B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="32"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Athlete"
+              DTS:DTSID="{43314272-87BD-4401-ADEF-40242B55AAE9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="3"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Country"
+              DTS:DTSID="{E1F96782-5E4C-4C14-A756-7B3C81BDE55F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="3"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Gender"
+              DTS:DTSID="{E4A4C9F1-27BB-4780-9E5A-6BE548743BFC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="32"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Event"
+              DTS:DTSID="{05E4CFE4-846D-4A58-A971-E07B23431480}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="6"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Medal"
+              DTS:DTSID="{6BE72305-1317-4565-913A-BDEA791C6B19}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000A_"
+              DTS:MaximumWidth="6"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Season"
+              DTS:DTSID="{5876FDC2-7156-4F34-8A46-D78F67317C8E}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager -Winter]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{F35DE50F-27F8-4BA3-B837-9E76F0AA4DD2}"
+      DTS:ObjectName="Flat File Connection Manager -Winter">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x002C_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="D:\DU\soroushu\OympicSSIS\OlympicTask\Data\winter_newSeason.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Year"
+              DTS:DTSID="{B981D042-9ECA-4E2A-887A-6AFD6E6562A3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="City"
+              DTS:DTSID="{BAC89BDC-63A1-4401-A960-A844040276D2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="10"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Sport"
+              DTS:DTSID="{3B8C5833-95F3-466A-9FEF-79535AAE76E8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="20"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Discipline"
+              DTS:DTSID="{547A36E5-81E5-46C0-B311-1A11F0BB039C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="29"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Athlete"
+              DTS:DTSID="{5C1FE191-AE19-40BB-99E7-E5F5DBB1C880}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="3"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Country"
+              DTS:DTSID="{8FBBCC26-C57F-4444-875B-60F1AA2A09D4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="5"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Gender"
+              DTS:DTSID="{A0A136FF-9948-425D-A597-5C24BD6655ED}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="20"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Event"
+              DTS:DTSID="{4EB05344-11F6-45BF-B4E1-FF39E31448B3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="6"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Medal"
+              DTS:DTSID="{9B78FB8F-9282-4B95-BC06-80CC988E7E6F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000A_"
+              DTS:MaximumWidth="6"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Season"
+              DTS:DTSID="{11C7EAC3-41A4-4975-A4BA-787BEA52480D}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LNOR080480\SQLEXPRESS.OlympicDB]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{0C13E39D-88ED-43E5-910F-E367B2532A22}"
+      DTS:ObjectName="LNOR080480\SQLEXPRESS.OlympicDB">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=LNOR080480\SQLEXPRESS;Initial Catalog=OlympicDB;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Package-{0C13E39D-88ED-43E5-910F-E367B2532A22}LNOR080480\SQLEXPRESS.OlympicDB;Auto Translate=False;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
@@ -254,8 +484,8 @@ where [refTable].[Name] = ?</property>
               <connections>
                 <connection
                   refId="Package\Load Table City\Lookup.Connections[OleDbConnection]"
-                  connectionManagerID="{09AE4989-70B8-4D07-8455-C8E33A43407E}:invalid"
-                  connectionManagerRefId="{09AE4989-70B8-4D07-8455-C8E33A43407E}:invalid"
+                  connectionManagerID="Package.ConnectionManagers[LNOR080480\SQLEXPRESS.OlympicDB]"
+                  connectionManagerRefId="Package.ConnectionManagers[LNOR080480\SQLEXPRESS.OlympicDB]"
                   description="Connection manager used to access lookup data."
                   name="OleDbConnection" />
               </connections>
@@ -460,8 +690,8 @@ where [refTable].[Name] = ?</property>
               <connections>
                 <connection
                   refId="Package\Load Table City\OLE DB Destination.Connections[OleDbConnection]"
-                  connectionManagerID="{09AE4989-70B8-4D07-8455-C8E33A43407E}:invalid"
-                  connectionManagerRefId="{09AE4989-70B8-4D07-8455-C8E33A43407E}:invalid"
+                  connectionManagerID="Package.ConnectionManagers[LNOR080480\SQLEXPRESS.OlympicDB]"
+                  connectionManagerRefId="Package.ConnectionManagers[LNOR080480\SQLEXPRESS.OlympicDB]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -688,8 +918,8 @@ where [refTable].[Name] = ?</property>
               <connections>
                 <connection
                   refId="Package\Load Table City\Summer.Connections[FlatFileConnection]"
-                  connectionManagerID="{A9AA2DBE-A3ED-407E-B06A-C59B9184ECEF}:invalid"
-                  connectionManagerRefId="{A9AA2DBE-A3ED-407E-B06A-C59B9184ECEF}:invalid"
+                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager - Summer]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager - Summer]"
                   name="FlatFileConnection" />
               </connections>
               <outputs>
@@ -724,8 +954,7 @@ where [refTable].[Name] = ?</property>
                     isUsed="True">
                     <externalMetadataColumn
                       refId="Package\Load Table City\Summer.Outputs[Flat File Source Output].ExternalColumns[Year]"
-                      dataType="wstr"
-                      length="50"
+                      dataType="i4"
                       name="Year" />
                     <externalMetadataColumn
                       refId="Package\Load Table City\Summer.Outputs[Flat File Source Output].ExternalColumns[City]"
@@ -737,49 +966,49 @@ where [refTable].[Name] = ?</property>
                       refId="Package\Load Table City\Summer.Outputs[Flat File Source Output].ExternalColumns[Sport]"
                       codePage="1252"
                       dataType="str"
-                      length="50"
+                      length="13"
                       name="Sport" />
                     <externalMetadataColumn
                       refId="Package\Load Table City\Summer.Outputs[Flat File Source Output].ExternalColumns[Discipline]"
                       codePage="1252"
                       dataType="str"
-                      length="50"
+                      length="15"
                       name="Discipline" />
                     <externalMetadataColumn
                       refId="Package\Load Table City\Summer.Outputs[Flat File Source Output].ExternalColumns[Athlete]"
                       codePage="1252"
                       dataType="str"
-                      length="50"
+                      length="32"
                       name="Athlete" />
                     <externalMetadataColumn
                       refId="Package\Load Table City\Summer.Outputs[Flat File Source Output].ExternalColumns[Country]"
                       codePage="1252"
                       dataType="str"
-                      length="50"
+                      length="3"
                       name="Country" />
                     <externalMetadataColumn
                       refId="Package\Load Table City\Summer.Outputs[Flat File Source Output].ExternalColumns[Gender]"
                       codePage="1252"
                       dataType="str"
-                      length="50"
+                      length="3"
                       name="Gender" />
                     <externalMetadataColumn
                       refId="Package\Load Table City\Summer.Outputs[Flat File Source Output].ExternalColumns[Event]"
                       codePage="1252"
                       dataType="str"
-                      length="50"
+                      length="32"
                       name="Event" />
                     <externalMetadataColumn
                       refId="Package\Load Table City\Summer.Outputs[Flat File Source Output].ExternalColumns[Medal]"
                       codePage="1252"
                       dataType="str"
-                      length="50"
+                      length="6"
                       name="Medal" />
                     <externalMetadataColumn
                       refId="Package\Load Table City\Summer.Outputs[Flat File Source Output].ExternalColumns[Season]"
                       codePage="1252"
                       dataType="str"
-                      length="50"
+                      length="6"
                       name="Season" />
                   </externalMetadataColumns>
                 </output>
@@ -834,8 +1063,8 @@ where [refTable].[Name] = ?</property>
               <connections>
                 <connection
                   refId="Package\Load Table City\Winter.Connections[FlatFileConnection]"
-                  connectionManagerID="{94B36C4D-ED3F-4B11-81BA-E3154B701BCF}:invalid"
-                  connectionManagerRefId="{94B36C4D-ED3F-4B11-81BA-E3154B701BCF}:invalid"
+                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager -Winter]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager -Winter]"
                   name="FlatFileConnection" />
               </connections>
               <outputs>
@@ -870,8 +1099,7 @@ where [refTable].[Name] = ?</property>
                     isUsed="True">
                     <externalMetadataColumn
                       refId="Package\Load Table City\Winter.Outputs[Flat File Source Output].ExternalColumns[Year]"
-                      dataType="wstr"
-                      length="50"
+                      dataType="i4"
                       name="Year" />
                     <externalMetadataColumn
                       refId="Package\Load Table City\Winter.Outputs[Flat File Source Output].ExternalColumns[City]"
@@ -883,49 +1111,49 @@ where [refTable].[Name] = ?</property>
                       refId="Package\Load Table City\Winter.Outputs[Flat File Source Output].ExternalColumns[Sport]"
                       codePage="1252"
                       dataType="str"
-                      length="50"
+                      length="10"
                       name="Sport" />
                     <externalMetadataColumn
                       refId="Package\Load Table City\Winter.Outputs[Flat File Source Output].ExternalColumns[Discipline]"
                       codePage="1252"
                       dataType="str"
-                      length="50"
+                      length="20"
                       name="Discipline" />
                     <externalMetadataColumn
                       refId="Package\Load Table City\Winter.Outputs[Flat File Source Output].ExternalColumns[Athlete]"
                       codePage="1252"
                       dataType="str"
-                      length="50"
+                      length="29"
                       name="Athlete" />
                     <externalMetadataColumn
                       refId="Package\Load Table City\Winter.Outputs[Flat File Source Output].ExternalColumns[Country]"
                       codePage="1252"
                       dataType="str"
-                      length="50"
+                      length="3"
                       name="Country" />
                     <externalMetadataColumn
                       refId="Package\Load Table City\Winter.Outputs[Flat File Source Output].ExternalColumns[Gender]"
                       codePage="1252"
                       dataType="str"
-                      length="50"
+                      length="5"
                       name="Gender" />
                     <externalMetadataColumn
                       refId="Package\Load Table City\Winter.Outputs[Flat File Source Output].ExternalColumns[Event]"
                       codePage="1252"
                       dataType="str"
-                      length="50"
+                      length="20"
                       name="Event" />
                     <externalMetadataColumn
                       refId="Package\Load Table City\Winter.Outputs[Flat File Source Output].ExternalColumns[Medal]"
                       codePage="1252"
                       dataType="str"
-                      length="50"
+                      length="6"
                       name="Medal" />
                     <externalMetadataColumn
                       refId="Package\Load Table City\Winter.Outputs[Flat File Source Output].ExternalColumns[Season]"
                       codePage="1252"
                       dataType="str"
-                      length="50"
+                      length="6"
                       name="Season" />
                   </externalMetadataColumns>
                 </output>
@@ -1003,7 +1231,6 @@ where [refTable].[Name] = ?</property>
       DTS:refId="Package\Load Table Country"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
-      DTS:Disabled="True"
       DTS:DTSID="{5F26131C-4208-44B2-87A7-A61B9CFAEE20}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
@@ -1253,8 +1480,8 @@ where [refTable].[Code] = ?</property>
               <connections>
                 <connection
                   refId="Package\Load Table Country\Lookup.Connections[OleDbConnection]"
-                  connectionManagerID="{09AE4989-70B8-4D07-8455-C8E33A43407E}:invalid"
-                  connectionManagerRefId="{09AE4989-70B8-4D07-8455-C8E33A43407E}:invalid"
+                  connectionManagerID="Package.ConnectionManagers[LNOR080480\SQLEXPRESS.OlympicDB]"
+                  connectionManagerRefId="Package.ConnectionManagers[LNOR080480\SQLEXPRESS.OlympicDB]"
                   description="Connection manager used to access lookup data."
                   name="OleDbConnection" />
               </connections>
@@ -1357,8 +1584,8 @@ where [refTable].[Code] = ?</property>
               <connections>
                 <connection
                   refId="Package\Load Table Country\OLE DB Command.Connections[OleDbConnection]"
-                  connectionManagerID="{09AE4989-70B8-4D07-8455-C8E33A43407E}:invalid"
-                  connectionManagerRefId="{09AE4989-70B8-4D07-8455-C8E33A43407E}:invalid"
+                  connectionManagerID="Package.ConnectionManagers[LNOR080480\SQLEXPRESS.OlympicDB]"
+                  connectionManagerRefId="Package.ConnectionManagers[LNOR080480\SQLEXPRESS.OlympicDB]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -1544,8 +1771,8 @@ where [refTable].[Code] = ?</property>
               <connections>
                 <connection
                   refId="Package\Load Table Country\OLE DB Destination.Connections[OleDbConnection]"
-                  connectionManagerID="{09AE4989-70B8-4D07-8455-C8E33A43407E}:invalid"
-                  connectionManagerRefId="{09AE4989-70B8-4D07-8455-C8E33A43407E}:invalid"
+                  connectionManagerID="Package.ConnectionManagers[LNOR080480\SQLEXPRESS.OlympicDB]"
+                  connectionManagerRefId="Package.ConnectionManagers[LNOR080480\SQLEXPRESS.OlympicDB]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -1843,8 +2070,8 @@ where [refTable].[Name] = ?</property>
               <connections>
                 <connection
                   refId="Package\Load Table Gender\Lookup 1.Connections[OleDbConnection]"
-                  connectionManagerID="{09AE4989-70B8-4D07-8455-C8E33A43407E}:invalid"
-                  connectionManagerRefId="{09AE4989-70B8-4D07-8455-C8E33A43407E}:invalid"
+                  connectionManagerID="Package.ConnectionManagers[LNOR080480\SQLEXPRESS.OlympicDB]"
+                  connectionManagerRefId="Package.ConnectionManagers[LNOR080480\SQLEXPRESS.OlympicDB]"
                   description="Connection manager used to access lookup data."
                   name="OleDbConnection" />
               </connections>
@@ -2049,8 +2276,8 @@ where [refTable].[Name] = ?</property>
               <connections>
                 <connection
                   refId="Package\Load Table Gender\OLE DB Destination 1.Connections[OleDbConnection]"
-                  connectionManagerID="{09AE4989-70B8-4D07-8455-C8E33A43407E}:invalid"
-                  connectionManagerRefId="{09AE4989-70B8-4D07-8455-C8E33A43407E}:invalid"
+                  connectionManagerID="Package.ConnectionManagers[LNOR080480\SQLEXPRESS.OlympicDB]"
+                  connectionManagerRefId="Package.ConnectionManagers[LNOR080480\SQLEXPRESS.OlympicDB]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -2277,8 +2504,8 @@ where [refTable].[Name] = ?</property>
               <connections>
                 <connection
                   refId="Package\Load Table Gender\Summer2.Connections[FlatFileConnection]"
-                  connectionManagerID="{A9AA2DBE-A3ED-407E-B06A-C59B9184ECEF}:invalid"
-                  connectionManagerRefId="{A9AA2DBE-A3ED-407E-B06A-C59B9184ECEF}:invalid"
+                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager - Summer]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager - Summer]"
                   name="FlatFileConnection" />
               </connections>
               <outputs>
@@ -2286,6 +2513,138 @@ where [refTable].[Name] = ?</property>
                   refId="Package\Load Table Gender\Summer2.Outputs[Flat File Source Output]"
                   name="Flat File Source Output">
                   <outputColumns>
+                    <outputColumn
+                      refId="Package\Load Table Gender\Summer2.Outputs[Flat File Source Output].Columns[Year]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Table Gender\Summer2.Outputs[Flat File Source Output].ExternalColumns[Year]"
+                      length="50"
+                      lineageId="Package\Load Table Gender\Summer2.Outputs[Flat File Source Output].Columns[Year]"
+                      name="Year"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load Table Gender\Summer2.Outputs[Flat File Source Output].Columns[City]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Table Gender\Summer2.Outputs[Flat File Source Output].ExternalColumns[City]"
+                      length="50"
+                      lineageId="Package\Load Table Gender\Summer2.Outputs[Flat File Source Output].Columns[City]"
+                      name="City"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load Table Gender\Summer2.Outputs[Flat File Source Output].Columns[Sport]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Table Gender\Summer2.Outputs[Flat File Source Output].ExternalColumns[Sport]"
+                      length="50"
+                      lineageId="Package\Load Table Gender\Summer2.Outputs[Flat File Source Output].Columns[Sport]"
+                      name="Sport"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load Table Gender\Summer2.Outputs[Flat File Source Output].Columns[Discipline]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Table Gender\Summer2.Outputs[Flat File Source Output].ExternalColumns[Discipline]"
+                      length="50"
+                      lineageId="Package\Load Table Gender\Summer2.Outputs[Flat File Source Output].Columns[Discipline]"
+                      name="Discipline"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load Table Gender\Summer2.Outputs[Flat File Source Output].Columns[Athlete]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Table Gender\Summer2.Outputs[Flat File Source Output].ExternalColumns[Athlete]"
+                      length="50"
+                      lineageId="Package\Load Table Gender\Summer2.Outputs[Flat File Source Output].Columns[Athlete]"
+                      name="Athlete"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load Table Gender\Summer2.Outputs[Flat File Source Output].Columns[Country]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Table Gender\Summer2.Outputs[Flat File Source Output].ExternalColumns[Country]"
+                      length="50"
+                      lineageId="Package\Load Table Gender\Summer2.Outputs[Flat File Source Output].Columns[Country]"
+                      name="Country"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
                     <outputColumn
                       refId="Package\Load Table Gender\Summer2.Outputs[Flat File Source Output].Columns[Gender]"
                       codePage="1252"
@@ -2308,12 +2667,79 @@ where [refTable].[Name] = ?</property>
                           name="UseBinaryFormat">false</property>
                       </properties>
                     </outputColumn>
+                    <outputColumn
+                      refId="Package\Load Table Gender\Summer2.Outputs[Flat File Source Output].Columns[Event]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Table Gender\Summer2.Outputs[Flat File Source Output].ExternalColumns[Event]"
+                      length="50"
+                      lineageId="Package\Load Table Gender\Summer2.Outputs[Flat File Source Output].Columns[Event]"
+                      name="Event"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load Table Gender\Summer2.Outputs[Flat File Source Output].Columns[Medal]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Table Gender\Summer2.Outputs[Flat File Source Output].ExternalColumns[Medal]"
+                      length="50"
+                      lineageId="Package\Load Table Gender\Summer2.Outputs[Flat File Source Output].Columns[Medal]"
+                      name="Medal"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load Table Gender\Summer2.Outputs[Flat File Source Output].Columns[Season]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Table Gender\Summer2.Outputs[Flat File Source Output].ExternalColumns[Season]"
+                      length="50"
+                      lineageId="Package\Load Table Gender\Summer2.Outputs[Flat File Source Output].Columns[Season]"
+                      name="Season"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
                       refId="Package\Load Table Gender\Summer2.Outputs[Flat File Source Output].ExternalColumns[Year]"
-                      dataType="wstr"
+                      codePage="1252"
+                      dataType="str"
                       length="50"
                       name="Year" />
                     <externalMetadataColumn
@@ -2423,8 +2849,8 @@ where [refTable].[Name] = ?</property>
               <connections>
                 <connection
                   refId="Package\Load Table Gender\Winter2.Connections[FlatFileConnection]"
-                  connectionManagerID="{94B36C4D-ED3F-4B11-81BA-E3154B701BCF}:invalid"
-                  connectionManagerRefId="{94B36C4D-ED3F-4B11-81BA-E3154B701BCF}:invalid"
+                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager -Winter]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager -Winter]"
                   name="FlatFileConnection" />
               </connections>
               <outputs>
@@ -2459,7 +2885,8 @@ where [refTable].[Name] = ?</property>
                     isUsed="True">
                     <externalMetadataColumn
                       refId="Package\Load Table Gender\Winter2.Outputs[Flat File Source Output].ExternalColumns[Year]"
-                      dataType="wstr"
+                      codePage="1252"
+                      dataType="str"
                       length="50"
                       name="Year" />
                     <externalMetadataColumn
@@ -2603,167 +3030,431 @@ where [refTable].[Name] = ?</property>
           version="1">
           <components>
             <component
-              refId="Package\Load Table Host\Aggregate 1"
-              componentClassID="Microsoft.Aggregate"
-              contactInfo="Aggregate;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;3"
-              description="Aggregates data with functions such as Average, Sum, Count, Max, and Min. For example, group data to compute the sum of sales per product or the average visits per day."
-              name="Aggregate 1"
-              version="3">
+              refId="Package\Load Table Host\Insert"
+              componentClassID="Microsoft.OLEDBCommand"
+              contactInfo="OLE DB Command;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;2"
+              description="Runs an SQL statement for each row in a data flow. For example, call a 'new employee setup' stored procedure for each row in the 'new employees' table. Note: running an SQL statement for each row of a large data flow may take a long time."
+              name="Insert"
+              usesDispositions="true"
+              version="2">
               <properties>
                 <property
                   dataType="System.Int32"
-                  description="Specifies the approximate number of group by keys that the aggregation produces. Low indicates 500,000 key values, Medium indicates 5 million key values, and High indicates more than 25 million key values. Unspecified indicates no KeyScale value is used."
-                  name="KeyScale"
-                  typeConverter="KeyScaleType">0</property>
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
                 <property
-                  dataType="System.Null"
-                  description="Specifies the exact number of group by keys that the aggregation produces. If a KeyScale value is specified, the value in Keys takes precedence."
-                  name="Keys" />
-                <property
-                  dataType="System.Int32"
-                  description="Specifies the approximate number of distinct values in a column that the aggregation counts distinctly. Low indicates 500,000 key values, Medium indicates 5 million key values, and High indicates more than 25 million key values. Unspecified indicates no CountDistinctScale value is used."
-                  name="CountDistinctScale"
-                  typeConverter="KeyScaleType">0</property>
-                <property
-                  dataType="System.Null"
-                  description="Specifies the exact number of distinct values in a column that the aggregation counts distinctly. If a CountDistinctScale value is specified, the value in CountDistinctKeys takes precedence."
-                  name="CountDistinctKeys" />
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">Insert into dbo.Host (Year, CityID,SeasonID) 
+Values (? ,(select ID from dbo.City where Name= ?), (select ID from dbo.Season where Name= ?));</property>
                 <property
                   dataType="System.Int32"
-                  description="Specifies the percentage by which memory can be extended during the aggregation. Valid values are between 1 and 100."
-                  name="AutoExtendFactor">25</property>
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
               </properties>
+              <connections>
+                <connection
+                  refId="Package\Load Table Host\Insert.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[LNOR080480\SQLEXPRESS.OlympicDB]"
+                  connectionManagerRefId="Package.ConnectionManagers[LNOR080480\SQLEXPRESS.OlympicDB]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
               <inputs>
                 <input
-                  refId="Package\Load Table Host\Aggregate 1.Inputs[Aggregate Input 1]"
-                  name="Aggregate Input 1">
+                  refId="Package\Load Table Host\Insert.Inputs[OLE DB Command Input]"
+                  errorOrTruncationOperation="Command Execution"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Command Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Load Table Host\Aggregate 1.Inputs[Aggregate Input 1].Columns[Year]"
+                      refId="Package\Load Table Host\Insert.Inputs[OLE DB Command Input].Columns[Year]"
+                      cachedDataType="i4"
+                      cachedName="Year"
+                      cachedSortKeyPosition="1"
+                      externalMetadataColumnId="Package\Load Table Host\Insert.Inputs[OLE DB Command Input].ExternalColumns[Param_0]"
+                      lineageId="Package\Load Table Host\Merge.Outputs[Merge Output 1].Columns[Year]" />
+                    <inputColumn
+                      refId="Package\Load Table Host\Insert.Inputs[OLE DB Command Input].Columns[City]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
-                      cachedName="Year"
-                      cachedSortKeyPosition="1"
-                      lineageId="Package\Load Table Host\Sort.Outputs[Sort Output].Columns[Year]" />
+                      cachedName="City"
+                      cachedSortKeyPosition="2"
+                      externalMetadataColumnId="Package\Load Table Host\Insert.Inputs[OLE DB Command Input].ExternalColumns[Param_1]"
+                      lineageId="Package\Load Table Host\Merge.Outputs[Merge Output 1].Columns[City]" />
                     <inputColumn
-                      refId="Package\Load Table Host\Aggregate 1.Inputs[Aggregate Input 1].Columns[City]"
+                      refId="Package\Load Table Host\Insert.Inputs[OLE DB Command Input].Columns[Season]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="6"
-                      cachedName="City"
-                      cachedSortKeyPosition="2"
-                      lineageId="Package\Load Table Host\Sort.Outputs[Sort Output].Columns[City]" />
-                    <inputColumn
-                      refId="Package\Load Table Host\Aggregate 1.Inputs[Aggregate Input 1].Columns[Season]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="7"
                       cachedName="Season"
                       cachedSortKeyPosition="3"
-                      lineageId="Package\Load Table Host\Sort.Outputs[Sort Output].Columns[Season]" />
+                      externalMetadataColumnId="Package\Load Table Host\Insert.Inputs[OLE DB Command Input].ExternalColumns[Param_2]"
+                      lineageId="Package\Load Table Host\Merge.Outputs[Merge Output 1].Columns[Season]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Load Table Host\Insert.Inputs[OLE DB Command Input].ExternalColumns[Param_0]"
+                      dataType="i4"
+                      name="Param_0">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">81</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\Load Table Host\Insert.Inputs[OLE DB Command Input].ExternalColumns[Param_1]"
+                      codePage="1252"
+                      dataType="str"
+                      length="200"
+                      name="Param_1">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\Load Table Host\Insert.Inputs[OLE DB Command Input].ExternalColumns[Param_2]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Param_2">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Load Table Host\Insert.Outputs[OLE DB Command Output]"
+                  exclusionGroup="1"
+                  name="OLE DB Command Output"
+                  synchronousInputId="Package\Load Table Host\Insert.Inputs[OLE DB Command Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Load Table Host\Insert.Outputs[OLE DB Command Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Command Error Output"
+                  synchronousInputId="Package\Load Table Host\Insert.Inputs[OLE DB Command Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load Table Host\Insert.Outputs[OLE DB Command Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Load Table Host\Insert.Outputs[OLE DB Command Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Load Table Host\Insert.Outputs[OLE DB Command Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Load Table Host\Insert.Outputs[OLE DB Command Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Load Table Host\Lookup"
+              componentClassID="Microsoft.Lookup"
+              contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
+              description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
+              name="Lookup"
+              usesDispositions="true"
+              version="6">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the SQL statement that generates the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from [dbo].[Host]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a SQL statement that uses parameters to generate the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommandParam"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[Host]) [refTable]
+where [refTable].[Year] = ?</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the type of connection used to access the reference dataset."
+                  name="ConnectionType"
+                  typeConverter="LookupConnectionType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the cache type of the lookup table."
+                  name="CacheType"
+                  typeConverter="CacheType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
+                  name="NoMatchBehavior"
+                  typeConverter="LookupNoMatchBehavior">1</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the percentage of the cache that is allocated for rows with no matching entries in the reference dataset."
+                  name="NoMatchCachePercentage">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Maximum Memory Usage for Reference Cache on a 32 bit platform."
+                  name="MaxMemoryUsage">25</property>
+                <property
+                  dataType="System.Int64"
+                  description="Maximum Memory Usage for Reference Cache on a 64 bit platform."
+                  name="MaxMemoryUsage64">25</property>
+                <property
+                  dataType="System.String"
+                  description="Indicates whether to reference metadata in an XML format."
+                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="ID" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Year" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="CityID" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="SeasonID" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                <property
+                  containsID="true"
+                  dataType="System.String"
+                  description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
+                  name="ParameterMap">#{Package\Load Table Host\60:invalid};</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Determines whether duplicate keys in the reference data should be treated as errors when full cache mode is used."
+                  name="TreatDuplicateKeysAsError">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Load Table Host\Lookup.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[LNOR080480\SQLEXPRESS.OlympicDB]"
+                  connectionManagerRefId="Package.ConnectionManagers[LNOR080480\SQLEXPRESS.OlympicDB]"
+                  description="Connection manager used to access lookup data."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Load Table Host\Lookup.Inputs[Lookup Input]"
+                  name="Lookup Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Load Table Host\Lookup.Inputs[Lookup Input].Columns[Year]"
+                      cachedDataType="i4"
+                      cachedName="Year"
+                      cachedSortKeyPosition="1"
+                      lineageId="Package\Load Table Host\Merge.Outputs[Merge Output 1].Columns[Year]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">Year</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
               </inputs>
               <outputs>
                 <output
-                  refId="Package\Load Table Host\Aggregate 1.Outputs[Aggregate Output 1]"
-                  name="Aggregate Output 1">
-                  <properties>
-                    <property
-                      dataType="System.Int32"
-                      description="Specifies the approximate number of group by keys that the aggregation produces. Low indicates 500,000 key values, Medium indicates 5 million key values, and High indicates more than 25 million key values. Unspecified indicates no KeyScale value is used."
-                      name="KeyScale"
-                      typeConverter="KeyScaleType">0</property>
-                    <property
-                      dataType="System.Null"
-                      description="Specifies the exact number of group by keys that the aggregation produces. If a KeyScale value is specified, the value in Keys takes precedence."
-                      name="Keys" />
-                  </properties>
+                  refId="Package\Load Table Host\Lookup.Outputs[Lookup Match Output]"
+                  errorOrTruncationOperation="Lookup"
+                  exclusionGroup="1"
+                  name="Lookup Match Output"
+                  synchronousInputId="Package\Load Table Host\Lookup.Inputs[Lookup Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Load Table Host\Lookup.Outputs[Lookup No Match Output]"
+                  description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
+                  exclusionGroup="1"
+                  name="Lookup No Match Output"
+                  synchronousInputId="Package\Load Table Host\Lookup.Inputs[Lookup Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Load Table Host\Lookup.Outputs[Lookup Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Lookup Error Output"
+                  synchronousInputId="Package\Load Table Host\Lookup.Inputs[Lookup Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Load Table Host\Aggregate 1.Outputs[Aggregate Output 1].Columns[Year]"
-                      dataType="i2"
-                      lineageId="Package\Load Table Host\Aggregate 1.Outputs[Aggregate Output 1].Columns[Year]"
-                      name="Year">
+                      refId="Package\Load Table Host\Lookup.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Load Table Host\Lookup.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Load Table Host\Lookup.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Load Table Host\Lookup.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Load Table Host\Merge"
+              componentClassID="Microsoft.Merge"
+              contactInfo="Merge;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Combines rows from multiple sorted data flows into one sorted data flow. Unlike the Merge Join, all rows flow to the output. For example, combine two sorted lists of customers into a single sorted list. If sorting is not important, use the Union All transformation. "
+              name="Merge"
+              version="1">
+              <inputs>
+                <input
+                  refId="Package\Load Table Host\Merge.Inputs[Merge Input 1]"
+                  name="Merge Input 1">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Load Table Host\Merge.Inputs[Merge Input 1].Columns[Year]"
+                      cachedDataType="i4"
+                      cachedName="Year"
+                      cachedSortKeyPosition="1"
+                      lineageId="Package\Load Table Host\Sort.Outputs[Sort Output].Columns[Year]">
                       <properties>
                         <property
                           containsID="true"
                           dataType="System.Int32"
-                          description="Specifies the ID of the input column used in the aggregation."
-                          name="AggregationColumnId">#{Package\Load Table Host\Sort.Outputs[Sort Output].Columns[Year]}</property>
-                        <property
-                          dataType="System.Int32"
-                          description="Specifies the type of aggregation."
-                          name="AggregationType"
-                          typeConverter="AggregationType">0</property>
-                        <property
-                          dataType="System.Int32"
-                          description="Indicates whether the column requires special handling because it may contain oversized data or it requires precision beyond a float data type."
-                          name="IsBig">1</property>
-                        <property
-                          dataType="System.Int32"
-                          description="Specifies the string comparison options."
-                          name="AggregationComparisonFlags">0</property>
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Load Table Host\Merge.Outputs[Merge Output 1].Columns[Year]}</property>
                       </properties>
-                    </outputColumn>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Load Table Host\Merge.Inputs[Merge Input 1].Columns[City]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="City"
+                      cachedSortKeyPosition="2"
+                      lineageId="Package\Load Table Host\Sort.Outputs[Sort Output].Columns[City]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Load Table Host\Merge.Outputs[Merge Output 1].Columns[City]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Load Table Host\Merge.Inputs[Merge Input 1].Columns[Season]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="6"
+                      cachedName="Season"
+                      cachedSortKeyPosition="3"
+                      lineageId="Package\Load Table Host\Sort.Outputs[Sort Output].Columns[Season]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Load Table Host\Merge.Outputs[Merge Output 1].Columns[Season]}</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+                <input
+                  refId="Package\Load Table Host\Merge.Inputs[Merge Input 2]"
+                  name="Merge Input 2">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Load Table Host\Merge.Inputs[Merge Input 2].Columns[Year]"
+                      cachedDataType="i4"
+                      cachedName="Year"
+                      cachedSortKeyPosition="1"
+                      lineageId="Package\Load Table Host\Sort 1.Outputs[Sort Output].Columns[Year]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Load Table Host\Merge.Outputs[Merge Output 1].Columns[Year]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Load Table Host\Merge.Inputs[Merge Input 2].Columns[City]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="City"
+                      cachedSortKeyPosition="2"
+                      lineageId="Package\Load Table Host\Sort 1.Outputs[Sort Output].Columns[City]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Load Table Host\Merge.Outputs[Merge Output 1].Columns[City]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Load Table Host\Merge.Inputs[Merge Input 2].Columns[Season]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="6"
+                      cachedName="Season"
+                      cachedSortKeyPosition="3"
+                      lineageId="Package\Load Table Host\Sort 1.Outputs[Sort Output].Columns[Season]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Load Table Host\Merge.Outputs[Merge Output 1].Columns[Season]}</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Load Table Host\Merge.Outputs[Merge Output 1]"
+                  isSorted="true"
+                  name="Merge Output 1">
+                  <outputColumns>
                     <outputColumn
-                      refId="Package\Load Table Host\Aggregate 1.Outputs[Aggregate Output 1].Columns[City]"
+                      refId="Package\Load Table Host\Merge.Outputs[Merge Output 1].Columns[Year]"
+                      dataType="i4"
+                      lineageId="Package\Load Table Host\Merge.Outputs[Merge Output 1].Columns[Year]"
+                      name="Year"
+                      sortKeyPosition="1" />
+                    <outputColumn
+                      refId="Package\Load Table Host\Merge.Outputs[Merge Output 1].Columns[City]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Load Table Host\Merge.Outputs[Merge Output 1].Columns[City]"
+                      name="City"
+                      sortKeyPosition="2" />
+                    <outputColumn
+                      refId="Package\Load Table Host\Merge.Outputs[Merge Output 1].Columns[Season]"
                       codePage="1252"
                       dataType="str"
                       length="6"
-                      lineageId="Package\Load Table Host\Aggregate 1.Outputs[Aggregate Output 1].Columns[City]"
-                      name="City">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Specifies the ID of the input column used in the aggregation."
-                          name="AggregationColumnId">#{Package\Load Table Host\Sort.Outputs[Sort Output].Columns[City]}</property>
-                        <property
-                          dataType="System.Int32"
-                          description="Specifies the type of aggregation."
-                          name="AggregationType"
-                          typeConverter="AggregationType">0</property>
-                        <property
-                          dataType="System.Int32"
-                          description="Indicates whether the column requires special handling because it may contain oversized data or it requires precision beyond a float data type."
-                          name="IsBig">1</property>
-                        <property
-                          dataType="System.Int32"
-                          description="Specifies the string comparison options."
-                          name="AggregationComparisonFlags">0</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Load Table Host\Aggregate 1.Outputs[Aggregate Output 1].Columns[Season]"
-                      codePage="1252"
-                      dataType="str"
-                      length="7"
-                      lineageId="Package\Load Table Host\Aggregate 1.Outputs[Aggregate Output 1].Columns[Season]"
-                      name="Season">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Specifies the ID of the input column used in the aggregation."
-                          name="AggregationColumnId">#{Package\Load Table Host\Sort.Outputs[Sort Output].Columns[Season]}</property>
-                        <property
-                          dataType="System.Int32"
-                          description="Specifies the type of aggregation."
-                          name="AggregationType"
-                          typeConverter="AggregationType">0</property>
-                        <property
-                          dataType="System.Int32"
-                          description="Indicates whether the column requires special handling because it may contain oversized data or it requires precision beyond a float data type."
-                          name="IsBig">1</property>
-                        <property
-                          dataType="System.Int32"
-                          description="Specifies the string comparison options."
-                          name="AggregationComparisonFlags">0</property>
-                      </properties>
-                    </outputColumn>
+                      lineageId="Package\Load Table Host\Merge.Outputs[Merge Output 1].Columns[Season]"
+                      name="Season"
+                      sortKeyPosition="3" />
                   </outputColumns>
                   <externalMetadataColumns />
                 </output>
@@ -2780,7 +3471,7 @@ where [refTable].[Name] = ?</property>
                 <property
                   dataType="System.Boolean"
                   description="Indicates whether the Sort transformation removes rows with duplicate sort values."
-                  name="EliminateDuplicates">false</property>
+                  name="EliminateDuplicates">true</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the maximum number of threads to use for sorting."
@@ -2794,9 +3485,7 @@ where [refTable].[Name] = ?</property>
                   <inputColumns>
                     <inputColumn
                       refId="Package\Load Table Host\Sort.Inputs[Sort Input].Columns[Year]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
+                      cachedDataType="i4"
                       cachedName="Year"
                       lineageId="Package\Load Table Host\Summer.Outputs[Flat File Source Output].Columns[Year]">
                       <properties>
@@ -2814,7 +3503,7 @@ where [refTable].[Name] = ?</property>
                       refId="Package\Load Table Host\Sort.Inputs[Sort Input].Columns[City]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="6"
+                      cachedLength="50"
                       cachedName="City"
                       lineageId="Package\Load Table Host\Summer.Outputs[Flat File Source Output].Columns[City]">
                       <properties>
@@ -2832,7 +3521,7 @@ where [refTable].[Name] = ?</property>
                       refId="Package\Load Table Host\Sort.Inputs[Sort Input].Columns[Season]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="7"
+                      cachedLength="6"
                       cachedName="Season"
                       lineageId="Package\Load Table Host\Summer.Outputs[Flat File Source Output].Columns[Season]">
                       <properties>
@@ -2858,9 +3547,7 @@ where [refTable].[Name] = ?</property>
                   <outputColumns>
                     <outputColumn
                       refId="Package\Load Table Host\Sort.Outputs[Sort Output].Columns[Year]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
+                      dataType="i4"
                       lineageId="Package\Load Table Host\Sort.Outputs[Sort Output].Columns[Year]"
                       name="Year"
                       sortKeyPosition="1">
@@ -2876,7 +3563,7 @@ where [refTable].[Name] = ?</property>
                       refId="Package\Load Table Host\Sort.Outputs[Sort Output].Columns[City]"
                       codePage="1252"
                       dataType="str"
-                      length="6"
+                      length="50"
                       lineageId="Package\Load Table Host\Sort.Outputs[Sort Output].Columns[City]"
                       name="City"
                       sortKeyPosition="2">
@@ -2892,7 +3579,7 @@ where [refTable].[Name] = ?</property>
                       refId="Package\Load Table Host\Sort.Outputs[Sort Output].Columns[Season]"
                       codePage="1252"
                       dataType="str"
-                      length="7"
+                      length="6"
                       lineageId="Package\Load Table Host\Sort.Outputs[Sort Output].Columns[Season]"
                       name="Season"
                       sortKeyPosition="3">
@@ -2902,6 +3589,142 @@ where [refTable].[Name] = ?</property>
                           dataType="System.Int32"
                           description="Specifies the lineage identifier of the input column that is associated with this output column."
                           name="SortColumnId">#{Package\Load Table Host\Summer.Outputs[Flat File Source Output].Columns[Season]}</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Load Table Host\Sort 1"
+              componentClassID="Microsoft.Sort"
+              contactInfo="Sort;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Sorts input data in ascending or descending order when it cannot be sorted at its source. For example, sort sales data by 'customer id' before it is written to a flat file and delivered to another department. Note: We do not recommend this transformation for large data flows."
+              name="Sort 1"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the Sort transformation removes rows with duplicate sort values."
+                  name="EliminateDuplicates">true</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the maximum number of threads to use for sorting."
+                  expressionType="Notify"
+                  name="MaximumThreads">-1</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Load Table Host\Sort 1.Inputs[Sort Input]"
+                  name="Sort Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Load Table Host\Sort 1.Inputs[Sort Input].Columns[Year]"
+                      cachedDataType="i4"
+                      cachedName="Year"
+                      lineageId="Package\Load Table Host\Winter.Outputs[Flat File Source Output].Columns[Year]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">1</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Load Table Host\Sort 1.Inputs[Sort Input].Columns[City]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="City"
+                      lineageId="Package\Load Table Host\Winter.Outputs[Flat File Source Output].Columns[City]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">2</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Load Table Host\Sort 1.Inputs[Sort Input].Columns[Season]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="6"
+                      cachedName="Season"
+                      lineageId="Package\Load Table Host\Winter.Outputs[Flat File Source Output].Columns[Season]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">3</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Load Table Host\Sort 1.Outputs[Sort Output]"
+                  isSorted="true"
+                  name="Sort Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load Table Host\Sort 1.Outputs[Sort Output].Columns[Year]"
+                      dataType="i4"
+                      lineageId="Package\Load Table Host\Sort 1.Outputs[Sort Output].Columns[Year]"
+                      name="Year"
+                      sortKeyPosition="1">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Load Table Host\Winter.Outputs[Flat File Source Output].Columns[Year]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load Table Host\Sort 1.Outputs[Sort Output].Columns[City]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Load Table Host\Sort 1.Outputs[Sort Output].Columns[City]"
+                      name="City"
+                      sortKeyPosition="2">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Load Table Host\Winter.Outputs[Flat File Source Output].Columns[City]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load Table Host\Sort 1.Outputs[Sort Output].Columns[Season]"
+                      codePage="1252"
+                      dataType="str"
+                      length="6"
+                      lineageId="Package\Load Table Host\Sort 1.Outputs[Sort Output].Columns[Season]"
+                      name="Season"
+                      sortKeyPosition="3">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Load Table Host\Winter.Outputs[Flat File Source Output].Columns[Season]}</property>
                       </properties>
                     </outputColumn>
                   </outputColumns>
@@ -2922,7 +3745,7 @@ where [refTable].[Name] = ?</property>
                 <property
                   dataType="System.Boolean"
                   description="Specifies whether zero-length columns are treated as null."
-                  name="RetainNulls">true</property>
+                  name="RetainNulls">false</property>
                 <property
                   dataType="System.String"
                   description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
@@ -2931,8 +3754,8 @@ where [refTable].[Name] = ?</property>
               <connections>
                 <connection
                   refId="Package\Load Table Host\Summer.Connections[FlatFileConnection]"
-                  connectionManagerID="{522A5560-5971-4F5A-AAD2-6C4D8584A757}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[Summer]"
+                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager - Summer]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager - Summer]"
                   name="FlatFileConnection" />
               </connections>
               <outputs>
@@ -2942,12 +3765,10 @@ where [refTable].[Name] = ?</property>
                   <outputColumns>
                     <outputColumn
                       refId="Package\Load Table Host\Summer.Outputs[Flat File Source Output].Columns[Year]"
-                      codePage="1252"
-                      dataType="str"
+                      dataType="i4"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Load Table Host\Summer.Outputs[Flat File Source Output].ExternalColumns[Year]"
-                      length="50"
                       lineageId="Package\Load Table Host\Summer.Outputs[Flat File Source Output].Columns[Year]"
                       name="Year"
                       truncationRowDisposition="FailComponent">
@@ -2969,7 +3790,7 @@ where [refTable].[Name] = ?</property>
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Load Table Host\Summer.Outputs[Flat File Source Output].ExternalColumns[City]"
-                      length="6"
+                      length="50"
                       lineageId="Package\Load Table Host\Summer.Outputs[Flat File Source Output].Columns[City]"
                       name="City"
                       truncationRowDisposition="FailComponent">
@@ -2991,7 +3812,7 @@ where [refTable].[Name] = ?</property>
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Load Table Host\Summer.Outputs[Flat File Source Output].ExternalColumns[Season]"
-                      length="7"
+                      length="6"
                       lineageId="Package\Load Table Host\Summer.Outputs[Flat File Source Output].Columns[Season]"
                       name="Season"
                       truncationRowDisposition="FailComponent">
@@ -3011,15 +3832,13 @@ where [refTable].[Name] = ?</property>
                     isUsed="True">
                     <externalMetadataColumn
                       refId="Package\Load Table Host\Summer.Outputs[Flat File Source Output].ExternalColumns[Year]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
+                      dataType="i4"
                       name="Year" />
                     <externalMetadataColumn
                       refId="Package\Load Table Host\Summer.Outputs[Flat File Source Output].ExternalColumns[City]"
                       codePage="1252"
                       dataType="str"
-                      length="6"
+                      length="50"
                       name="City" />
                     <externalMetadataColumn
                       refId="Package\Load Table Host\Summer.Outputs[Flat File Source Output].ExternalColumns[Sport]"
@@ -3067,7 +3886,7 @@ where [refTable].[Name] = ?</property>
                       refId="Package\Load Table Host\Summer.Outputs[Flat File Source Output].ExternalColumns[Season]"
                       codePage="1252"
                       dataType="str"
-                      length="7"
+                      length="6"
                       name="Season" />
                   </externalMetadataColumns>
                 </output>
@@ -3100,6 +3919,193 @@ where [refTable].[Name] = ?</property>
                 </output>
               </outputs>
             </component>
+            <component
+              refId="Package\Load Table Host\Winter"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="1033"
+              name="Winter"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Load Table Host\Winter.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager -Winter]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager -Winter]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Load Table Host\Winter.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load Table Host\Winter.Outputs[Flat File Source Output].Columns[Year]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Table Host\Winter.Outputs[Flat File Source Output].ExternalColumns[Year]"
+                      lineageId="Package\Load Table Host\Winter.Outputs[Flat File Source Output].Columns[Year]"
+                      name="Year"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load Table Host\Winter.Outputs[Flat File Source Output].Columns[City]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Table Host\Winter.Outputs[Flat File Source Output].ExternalColumns[City]"
+                      length="50"
+                      lineageId="Package\Load Table Host\Winter.Outputs[Flat File Source Output].Columns[City]"
+                      name="City"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load Table Host\Winter.Outputs[Flat File Source Output].Columns[Season]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Table Host\Winter.Outputs[Flat File Source Output].ExternalColumns[Season]"
+                      length="6"
+                      lineageId="Package\Load Table Host\Winter.Outputs[Flat File Source Output].Columns[Season]"
+                      name="Season"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Load Table Host\Winter.Outputs[Flat File Source Output].ExternalColumns[Year]"
+                      dataType="i4"
+                      name="Year" />
+                    <externalMetadataColumn
+                      refId="Package\Load Table Host\Winter.Outputs[Flat File Source Output].ExternalColumns[City]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="City" />
+                    <externalMetadataColumn
+                      refId="Package\Load Table Host\Winter.Outputs[Flat File Source Output].ExternalColumns[Sport]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      name="Sport" />
+                    <externalMetadataColumn
+                      refId="Package\Load Table Host\Winter.Outputs[Flat File Source Output].ExternalColumns[Discipline]"
+                      codePage="1252"
+                      dataType="str"
+                      length="20"
+                      name="Discipline" />
+                    <externalMetadataColumn
+                      refId="Package\Load Table Host\Winter.Outputs[Flat File Source Output].ExternalColumns[Athlete]"
+                      codePage="1252"
+                      dataType="str"
+                      length="29"
+                      name="Athlete" />
+                    <externalMetadataColumn
+                      refId="Package\Load Table Host\Winter.Outputs[Flat File Source Output].ExternalColumns[Country]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3"
+                      name="Country" />
+                    <externalMetadataColumn
+                      refId="Package\Load Table Host\Winter.Outputs[Flat File Source Output].ExternalColumns[Gender]"
+                      codePage="1252"
+                      dataType="str"
+                      length="5"
+                      name="Gender" />
+                    <externalMetadataColumn
+                      refId="Package\Load Table Host\Winter.Outputs[Flat File Source Output].ExternalColumns[Event]"
+                      codePage="1252"
+                      dataType="str"
+                      length="20"
+                      name="Event" />
+                    <externalMetadataColumn
+                      refId="Package\Load Table Host\Winter.Outputs[Flat File Source Output].ExternalColumns[Medal]"
+                      codePage="1252"
+                      dataType="str"
+                      length="6"
+                      name="Medal" />
+                    <externalMetadataColumn
+                      refId="Package\Load Table Host\Winter.Outputs[Flat File Source Output].ExternalColumns[Season]"
+                      codePage="1252"
+                      dataType="str"
+                      length="6"
+                      name="Season" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Load Table Host\Winter.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load Table Host\Winter.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="1252"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\Load Table Host\Winter.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\Load Table Host\Winter.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Load Table Host\Winter.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Load Table Host\Winter.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Load Table Host\Winter.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
           </components>
           <paths>
             <path
@@ -3108,10 +4114,30 @@ where [refTable].[Name] = ?</property>
               name="Flat File Source Output"
               startId="Package\Load Table Host\Summer.Outputs[Flat File Source Output]" />
             <path
+              refId="Package\Load Table Host.Paths[Flat File Source Output1]"
+              endId="Package\Load Table Host\Sort 1.Inputs[Sort Input]"
+              name="Flat File Source Output"
+              startId="Package\Load Table Host\Winter.Outputs[Flat File Source Output]" />
+            <path
+              refId="Package\Load Table Host.Paths[Lookup No Match Output]"
+              endId="Package\Load Table Host\Insert.Inputs[OLE DB Command Input]"
+              name="Lookup No Match Output"
+              startId="Package\Load Table Host\Lookup.Outputs[Lookup No Match Output]" />
+            <path
+              refId="Package\Load Table Host.Paths[Merge Output 1]"
+              endId="Package\Load Table Host\Lookup.Inputs[Lookup Input]"
+              name="Merge Output 1"
+              startId="Package\Load Table Host\Merge.Outputs[Merge Output 1]" />
+            <path
               refId="Package\Load Table Host.Paths[Sort Output]"
-              endId="Package\Load Table Host\Aggregate 1.Inputs[Aggregate Input 1]"
+              endId="Package\Load Table Host\Merge.Inputs[Merge Input 1]"
               name="Sort Output"
               startId="Package\Load Table Host\Sort.Outputs[Sort Output]" />
+            <path
+              refId="Package\Load Table Host.Paths[Sort Output1]"
+              endId="Package\Load Table Host\Merge.Inputs[Merge Input 2]"
+              name="Sort Output"
+              startId="Package\Load Table Host\Sort 1.Outputs[Sort Output]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
@@ -3297,8 +4323,8 @@ where [refTable].[Type] = ?</property>
               <connections>
                 <connection
                   refId="Package\Load Table Medal\Lookup.Connections[OleDbConnection]"
-                  connectionManagerID="{09AE4989-70B8-4D07-8455-C8E33A43407E}:invalid"
-                  connectionManagerRefId="{09AE4989-70B8-4D07-8455-C8E33A43407E}:invalid"
+                  connectionManagerID="Package.ConnectionManagers[LNOR080480\SQLEXPRESS.OlympicDB]"
+                  connectionManagerRefId="Package.ConnectionManagers[LNOR080480\SQLEXPRESS.OlympicDB]"
                   description="Connection manager used to access lookup data."
                   name="OleDbConnection" />
               </connections>
@@ -3503,8 +4529,8 @@ where [refTable].[Type] = ?</property>
               <connections>
                 <connection
                   refId="Package\Load Table Medal\OLE DB Destination.Connections[OleDbConnection]"
-                  connectionManagerID="{09AE4989-70B8-4D07-8455-C8E33A43407E}:invalid"
-                  connectionManagerRefId="{09AE4989-70B8-4D07-8455-C8E33A43407E}:invalid"
+                  connectionManagerID="Package.ConnectionManagers[LNOR080480\SQLEXPRESS.OlympicDB]"
+                  connectionManagerRefId="Package.ConnectionManagers[LNOR080480\SQLEXPRESS.OlympicDB]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -3731,8 +4757,8 @@ where [refTable].[Type] = ?</property>
               <connections>
                 <connection
                   refId="Package\Load Table Medal\Summer.Connections[FlatFileConnection]"
-                  connectionManagerID="{A9AA2DBE-A3ED-407E-B06A-C59B9184ECEF}:invalid"
-                  connectionManagerRefId="{A9AA2DBE-A3ED-407E-B06A-C59B9184ECEF}:invalid"
+                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager - Summer]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager - Summer]"
                   name="FlatFileConnection" />
               </connections>
               <outputs>
@@ -3767,7 +4793,8 @@ where [refTable].[Type] = ?</property>
                     isUsed="True">
                     <externalMetadataColumn
                       refId="Package\Load Table Medal\Summer.Outputs[Flat File Source Output].ExternalColumns[Year]"
-                      dataType="wstr"
+                      codePage="1252"
+                      dataType="str"
                       length="50"
                       name="Year" />
                     <externalMetadataColumn
@@ -3877,8 +4904,8 @@ where [refTable].[Type] = ?</property>
               <connections>
                 <connection
                   refId="Package\Load Table Medal\Winter.Connections[FlatFileConnection]"
-                  connectionManagerID="{94B36C4D-ED3F-4B11-81BA-E3154B701BCF}:invalid"
-                  connectionManagerRefId="{94B36C4D-ED3F-4B11-81BA-E3154B701BCF}:invalid"
+                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager -Winter]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager -Winter]"
                   name="FlatFileConnection" />
               </connections>
               <outputs>
@@ -3913,7 +4940,8 @@ where [refTable].[Type] = ?</property>
                     isUsed="True">
                     <externalMetadataColumn
                       refId="Package\Load Table Medal\Winter.Outputs[Flat File Source Output].ExternalColumns[Year]"
-                      dataType="wstr"
+                      codePage="1252"
+                      dataType="str"
                       length="50"
                       name="Year" />
                     <externalMetadataColumn
@@ -4223,8 +5251,8 @@ where [refTable].[Name] = ?</property>
               <connections>
                 <connection
                   refId="Package\Load Table Season\Lookup.Connections[OleDbConnection]"
-                  connectionManagerID="{09AE4989-70B8-4D07-8455-C8E33A43407E}:invalid"
-                  connectionManagerRefId="{09AE4989-70B8-4D07-8455-C8E33A43407E}:invalid"
+                  connectionManagerID="Package.ConnectionManagers[LNOR080480\SQLEXPRESS.OlympicDB]"
+                  connectionManagerRefId="Package.ConnectionManagers[LNOR080480\SQLEXPRESS.OlympicDB]"
                   description="Connection manager used to access lookup data."
                   name="OleDbConnection" />
               </connections>
@@ -4429,8 +5457,8 @@ where [refTable].[Name] = ?</property>
               <connections>
                 <connection
                   refId="Package\Load Table Season\OLE DB Destination.Connections[OleDbConnection]"
-                  connectionManagerID="{09AE4989-70B8-4D07-8455-C8E33A43407E}:invalid"
-                  connectionManagerRefId="{09AE4989-70B8-4D07-8455-C8E33A43407E}:invalid"
+                  connectionManagerID="Package.ConnectionManagers[LNOR080480\SQLEXPRESS.OlympicDB]"
+                  connectionManagerRefId="Package.ConnectionManagers[LNOR080480\SQLEXPRESS.OlympicDB]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -4657,8 +5685,8 @@ where [refTable].[Name] = ?</property>
               <connections>
                 <connection
                   refId="Package\Load Table Season\Summer.Connections[FlatFileConnection]"
-                  connectionManagerID="{A9AA2DBE-A3ED-407E-B06A-C59B9184ECEF}:invalid"
-                  connectionManagerRefId="{A9AA2DBE-A3ED-407E-B06A-C59B9184ECEF}:invalid"
+                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager - Summer]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager - Summer]"
                   name="FlatFileConnection" />
               </connections>
               <outputs>
@@ -4693,7 +5721,8 @@ where [refTable].[Name] = ?</property>
                     isUsed="True">
                     <externalMetadataColumn
                       refId="Package\Load Table Season\Summer.Outputs[Flat File Source Output].ExternalColumns[Year]"
-                      dataType="wstr"
+                      codePage="1252"
+                      dataType="str"
                       length="50"
                       name="Year" />
                     <externalMetadataColumn
@@ -4803,8 +5832,8 @@ where [refTable].[Name] = ?</property>
               <connections>
                 <connection
                   refId="Package\Load Table Season\Winter.Connections[FlatFileConnection]"
-                  connectionManagerID="{94B36C4D-ED3F-4B11-81BA-E3154B701BCF}:invalid"
-                  connectionManagerRefId="{94B36C4D-ED3F-4B11-81BA-E3154B701BCF}:invalid"
+                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager -Winter]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager -Winter]"
                   name="FlatFileConnection" />
               </connections>
               <outputs>
@@ -4839,7 +5868,8 @@ where [refTable].[Name] = ?</property>
                     isUsed="True">
                     <externalMetadataColumn
                       refId="Package\Load Table Season\Winter.Outputs[Flat File Source Output].ExternalColumns[Year]"
-                      dataType="wstr"
+                      codePage="1252"
+                      dataType="str"
                       length="50"
                       name="Year" />
                     <externalMetadataColumn
@@ -5024,27 +6054,27 @@ where [refTable].[Name] = ?</property>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="166,51.3333333333334"
+          Size="166,51"
           Id="Package\Load Table City"
           TopLeft="83.7499962560834,241.799988470078" />
         <NodeLayout
-          Size="172,42.6666666666667"
+          Size="172,43"
           Id="Package\Load Table Country"
           TopLeft="79.374996451661,85.7999959087373" />
         <NodeLayout
-          Size="169.333333333334,42.6666666666667"
+          Size="169,43"
           Id="Package\Load Table Gender"
           TopLeft="84.3749962281437,408.849980504513" />
         <NodeLayout
-          Size="156,42.6666666666667"
+          Size="156,43"
           Id="Package\Load Table Host"
           TopLeft="90.6249959487469,479.049977157117" />
         <NodeLayout
-          Size="162.666666666667,42.6666666666667"
+          Size="163,43"
           Id="Package\Load Table Medal"
           TopLeft="87.4999960884454,328.899984316826" />
         <NodeLayout
-          Size="168,42.6666666666667"
+          Size="168,43"
           Id="Package\Load Table Season"
           TopLeft="82.4999963119627,167.699992003441" />
         <EdgeLayout
@@ -5166,35 +6196,35 @@ where [refTable].[Name] = ?</property>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="172,42.6666666666667"
+          Size="172,43"
           Id="Package\Load Table City\OLE DB Destination"
           TopLeft="173.05555086169,564.16664985319" />
         <NodeLayout
-          Size="128,42.6666666666667"
+          Size="128,43"
           Id="Package\Load Table City\Aggregate"
           TopLeft="369.166655664643,348.333322952191" />
         <NodeLayout
-          Size="108,42.6666666666667"
+          Size="108,43"
           Id="Package\Load Table City\Sort 1"
           TopLeft="366.833322400849,134.333329329888" />
         <NodeLayout
-          Size="110.666666666667,42.6666666666667"
+          Size="111,43"
           Id="Package\Load Table City\Winter"
           TopLeft="367.166655724247,43.1666653801998" />
         <NodeLayout
-          Size="109.333333333334,42.6666666666667"
+          Size="109,43"
           Id="Package\Load Table City\Merge"
           TopLeft="258.166658972701,234.666659673055" />
         <NodeLayout
-          Size="118.666666666667,42.6666666666667"
+          Size="119,43"
           Id="Package\Load Table City\Summer"
           TopLeft="131.666662742694,47.6666652460894" />
         <NodeLayout
-          Size="98.6666666666667,42.6666666666667"
+          Size="99,43"
           Id="Package\Load Table City\Sort"
           TopLeft="163.333328465621,123.333329657714" />
         <NodeLayout
-          Size="113.333333333334,42.6666666666667"
+          Size="113,43"
           Id="Package\Load Table City\Lookup"
           TopLeft="380.833321983616,450.833319897453" />
         <EdgeLayout
@@ -5458,19 +6488,19 @@ where [refTable].[Name] = ?</property>
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="113.333333333334,42.6666666666667"
+          Size="113,43"
           Id="Package\Load Table Country\Lookup"
           TopLeft="261.666658868392,219.333326796691" />
         <NodeLayout
-          Size="172,42.6666666666667"
+          Size="172,43"
           Id="Package\Load Table Country\OLE DB Destination"
           TopLeft="113.666663279136,318.333323846261" />
         <NodeLayout
-          Size="152,42.6666666666667"
+          Size="152,43"
           Id="Package\Load Table Country\Flat File Source"
           TopLeft="244.999992698431,120.66666307052" />
         <NodeLayout
-          Size="166.666666666667,42.6666666666667"
+          Size="167,43"
           Id="Package\Load Table Country\OLE DB Command"
           TopLeft="360.999989241362,317.333323876063" />
         <EdgeLayout
@@ -5614,93 +6644,37 @@ where [refTable].[Name] = ?</property>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="181.333333333334,90"
+          Size="181,90"
           Id="Package\Load Table Gender\OLE DB Destination 1"
           TopLeft="240.999992817641,656.666647116344" />
         <NodeLayout
-          Size="137.333333333334,42.6666666666667"
+          Size="137,43"
           Id="Package\Load Table Gender\Aggregate 1"
           TopLeft="436.999986976385,405.999987900257" />
         <NodeLayout
-          Size="108,42.6666666666667"
+          Size="108,43"
           Id="Package\Load Table Gender\Sort 3"
           TopLeft="715.999978661538,176.999994724989" />
         <NodeLayout
-          Size="116,42.6666666666667"
-          Id="Package\Load Table Gender\Winter2"
-          TopLeft="734.999978095293,80.999997586012" />
-        <NodeLayout
-          Size="118.666666666667,42.6666666666667"
+          Size="119,43"
           Id="Package\Load Table Gender\Merge 1"
           TopLeft="452.999986499548,320.999990433455" />
         <NodeLayout
-          Size="125.333333333334,42.6666666666667"
+          Size="125,43"
           Id="Package\Load Table Gender\Summer2"
           TopLeft="226.999993234873,59.9999982118607" />
         <NodeLayout
-          Size="108,42.6666666666667"
+          Size="116,43"
+          Id="Package\Load Table Gender\Winter2"
+          TopLeft="734.999978095293,80.999997586012" />
+        <NodeLayout
+          Size="108,43"
           Id="Package\Load Table Gender\Sort 2"
           TopLeft="239.999992847443,183.999994516373" />
         <NodeLayout
-          Size="122.666666666667,42.6666666666667"
+          Size="123,43"
           Id="Package\Load Table Gender\Lookup 1"
           TopLeft="434.99998703599,513.999984681607" />
-        <EdgeLayout
-          Id="Package\Load Table Gender.Paths[Flat File Source Output]"
-          TopLeft="291.833326374491,102.666664878527">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,81.3333296378455"
-              Start="0,0"
-              End="0,73.8333296378455">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,73.8333296378455" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Load Table Gender.Paths[Aggregate Output 1]"
-          TopLeft="505.666653643052,448.666654566924">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-9.33333327372844,65.3333301146826"
-              Start="0,0"
-              End="-9.33333327372844,57.8333301146826">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,28.6666650573413" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,28.6666650573413"
-                    Point2="0,32.6666650573413"
-                    Point3="-4,32.6666650573413" />
-                  <mssgle:LineSegment
-                    End="-5.33333327372844,32.6666650573413" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-5.33333327372844,32.6666650573413"
-                    Point2="-9.33333327372844,32.6666650573413"
-                    Point3="-9.33333327372844,36.6666650573413" />
-                  <mssgle:LineSegment
-                    End="-9.33333327372844,57.8333301146826" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
         <EdgeLayout
           Id="Package\Load Table Gender.Paths[Sort Output1]"
           TopLeft="769.999978661538,219.666661391656">
@@ -5732,7 +6706,9 @@ where [refTable].[Name] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -5766,7 +6742,9 @@ where [refTable].[Name] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -5788,7 +6766,9 @@ where [refTable].[Name] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -5858,7 +6838,69 @@ where [refTable].[Name] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load Table Gender.Paths[Flat File Source Output]"
+          TopLeft="291.833326374491,102.666664878527">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,81.3333296378455"
+              Start="0,0"
+              End="0,73.8333296378455">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,73.8333296378455" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load Table Gender.Paths[Aggregate Output 1]"
+          TopLeft="505.666653643052,448.666654566924">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-9.33333327372844,65.3333301146826"
+              Start="0,0"
+              End="-9.33333327372844,57.8333301146826">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,28.6666650573413" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,28.6666650573413"
+                    Point2="0,32.6666650573413"
+                    Point3="-4,32.6666650573413" />
+                  <mssgle:LineSegment
+                    End="-5.33333327372844,32.6666650573413" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-5.33333327372844,32.6666650573413"
+                    Point2="-9.33333327372844,32.6666650573413"
+                    Point3="-9.33333327372844,36.6666650573413" />
+                  <mssgle:LineSegment
+                    End="-9.33333327372844,57.8333301146826" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -5904,19 +6946,103 @@ where [refTable].[Name] = ?</property>
     design-time-name="Package\Load Table Host">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="118.666666666667,42.6666666666667"
-          Id="Package\Load Table Host\Summer"
-          TopLeft="125.833329583208,57.4999982863665" />
+          Size="108,42"
+          Id="Package\Load Table Host\Sort 1"
+          TopLeft="491,167" />
         <NodeLayout
-          Size="137.333333333334,42.6666666666667"
-          Id="Package\Load Table Host\Aggregate 1"
-          TopLeft="107.49999679625,234.166659687956" />
-        <NodeLayout
-          Size="98.6666666666667,42.6666666666667"
+          Size="99,43"
           Id="Package\Load Table Host\Sort"
           TopLeft="119.166663115223,142.499995753169" />
+        <NodeLayout
+          Size="111,42"
+          Id="Package\Load Table Host\Winter"
+          TopLeft="469,64" />
+        <NodeLayout
+          Size="115,42"
+          Id="Package\Load Table Host\Lookup"
+          TopLeft="618,339" />
+        <NodeLayout
+          Size="107,42"
+          Id="Package\Load Table Host\Insert"
+          TopLeft="879,202" />
+        <NodeLayout
+          Size="119,43"
+          Id="Package\Load Table Host\Summer"
+          TopLeft="125.833329583208,57.4999982863665" />
+        <EdgeLayout
+          Id="Package\Load Table Host.Paths[Lookup No Match Output]"
+          TopLeft="675.5,339">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="257,-95"
+              Start="0,0"
+              End="257,-87.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,-43.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,-43.5"
+                    Point2="0,-47.5"
+                    Point3="4,-47.5" />
+                  <mssgle:LineSegment
+                    End="253,-47.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="253,-47.5"
+                    Point2="257,-47.5"
+                    Point3="257,-51.5" />
+                  <mssgle:LineSegment
+                    End="257,-87.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="72.69361328125,-42.5,111.6127734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load Table Host.Paths[Flat File Source Output1]"
+          TopLeft="524.5,106">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="20.5,61"
+              Start="0,0"
+              End="20.5,53.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,26.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,26.5"
+                    Point2="0,30.5"
+                    Point3="4,30.5" />
+                  <mssgle:LineSegment
+                    End="16.5,30.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="16.5,30.5"
+                    Point2="20.5,30.5"
+                    Point3="20.5,34.5" />
+                  <mssgle:LineSegment
+                    End="20.5,53.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="2.25,35.5,16,16"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\Load Table Host.Paths[Flat File Source Output]"
           TopLeft="185.166662916541,100.166664953033">
@@ -5953,20 +7079,104 @@ where [refTable].[Name] = ?</property>
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <NodeLayout
+          Size="110,42"
+          Id="Package\Load Table Host\Merge"
+          TopLeft="364,328" />
         <EdgeLayout
           Id="Package\Load Table Host.Paths[Sort Output]"
-          TopLeft="172.333329955737,185.166662419836">
+          TopLeft="168.666663115223,185.499995753169">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,48.9999972681206"
+              EndConnector="250.333336884777,142.500004246831"
               Start="0,0"
-              End="0,41.4999972681206">
+              End="250.333336884777,135.000004246831">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,41.4999972681206" />
+                    End="0,67.2500021234155" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,67.2500021234155"
+                    Point2="0,71.2500021234155"
+                    Point3="4,71.2500021234155" />
+                  <mssgle:LineSegment
+                    End="246.333336884777,71.2500021234155" />
+                  <mssgle:CubicBezierSegment
+                    Point1="246.333336884777,71.2500021234155"
+                    Point2="250.333336884777,71.2500021234155"
+                    Point3="250.333336884777,75.2500021234155" />
+                  <mssgle:LineSegment
+                    End="250.333336884777,135.000004246831" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load Table Host.Paths[Sort Output1]"
+          TopLeft="545,209">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-109,119"
+              Start="0,0"
+              End="-109,111.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,66.3763440860215" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,66.3763440860215"
+                    Point2="0,70.3763440860215"
+                    Point3="-4,70.3763440860215" />
+                  <mssgle:LineSegment
+                    End="-105,70.3763440860215" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-105,70.3763440860215"
+                    Point2="-109,70.3763440860215"
+                    Point3="-109,74.3763440860215" />
+                  <mssgle:LineSegment
+                    End="-109,111.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load Table Host.Paths[Merge Output 1]"
+          TopLeft="474,349">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="144,11"
+              Start="0,0"
+              End="136.5,11">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="68,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="68,0"
+                    Point2="72,0"
+                    Point3="72,4" />
+                  <mssgle:LineSegment
+                    End="72,7" />
+                  <mssgle:CubicBezierSegment
+                    Point1="72,7"
+                    Point2="72,11"
+                    Point3="76,11" />
+                  <mssgle:LineSegment
+                    End="136.5,11" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -5978,41 +7188,64 @@ where [refTable].[Name] = ?</property>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load Table Host\Lookup">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:string">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[Host]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:string">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\Load Table Medal">
     <LayoutInfo>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="172,42.6666666666667"
+          Size="172,43"
           Id="Package\Load Table Medal\OLE DB Destination"
           TopLeft="323.846144194787,575.230752087557" />
         <NodeLayout
-          Size="128,42.6666666666667"
+          Size="128,43"
           Id="Package\Load Table Medal\Aggregate"
           TopLeft="365.99998909235,369.999988973141" />
         <NodeLayout
-          Size="108,42.6666666666667"
+          Size="108,43"
           Id="Package\Load Table Medal\Sort 1"
           TopLeft="485.999985516072,151.999995470047" />
         <NodeLayout
-          Size="110.666666666667,42.6666666666667"
+          Size="111,43"
           Id="Package\Load Table Medal\Winter"
           TopLeft="443.999986767769,47.9999985694886" />
         <NodeLayout
-          Size="109.333333333334,42.6666666666667"
+          Size="109,43"
           Id="Package\Load Table Medal\Merge"
           TopLeft="391.99998831749,271.999991893769" />
         <NodeLayout
-          Size="118.666666666667,42.6666666666667"
+          Size="119,43"
           Id="Package\Load Table Medal\Summer"
           TopLeft="181.999994575977,55.99999833107" />
         <NodeLayout
-          Size="98.6666666666667,42.6666666666667"
+          Size="99,43"
           Id="Package\Load Table Medal\Sort"
           TopLeft="221.999993383885,153.999995410442" />
         <NodeLayout
-          Size="113.333333333334,42.6666666666667"
+          Size="113,43"
           Id="Package\Load Table Medal\Lookup"
           TopLeft="376.999988764525,465.999986112118" />
         <EdgeLayout
@@ -6046,7 +7279,9 @@ where [refTable].[Name] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -6068,7 +7303,9 @@ where [refTable].[Name] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -6102,7 +7339,9 @@ where [refTable].[Name] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -6136,7 +7375,9 @@ where [refTable].[Name] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -6170,7 +7411,9 @@ where [refTable].[Name] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -6240,7 +7483,9 @@ where [refTable].[Name] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -6288,35 +7533,35 @@ where [refTable].[Name] = ?</property>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="172,42.6666666666667"
+          Size="172,43"
           Id="Package\Load Table Season\OLE DB Destination"
           TopLeft="279.99999165535,543.999983787537" />
         <NodeLayout
-          Size="128,42.6666666666667"
+          Size="128,43"
           Id="Package\Load Table Season\Aggregate"
           TopLeft="284.666658182939,349.999989569187" />
         <NodeLayout
-          Size="108,42.6666666666667"
+          Size="108,43"
           Id="Package\Load Table Season\Sort 1"
           TopLeft="369.999988973141,149.333328882853" />
         <NodeLayout
-          Size="110.666666666667,42.6666666666667"
+          Size="111,43"
           Id="Package\Load Table Season\Winter"
           TopLeft="157.999995291233,48.9999985396863" />
         <NodeLayout
-          Size="109.333333333334,42.6666666666667"
+          Size="109,43"
           Id="Package\Load Table Season\Merge"
           TopLeft="287.333324770133,260.333325574795" />
         <NodeLayout
-          Size="118.666666666667,42.6666666666667"
+          Size="119,43"
           Id="Package\Load Table Season\Summer"
           TopLeft="366.384604465503,50.5384600322982" />
         <NodeLayout
-          Size="98.6666666666667,42.6666666666667"
+          Size="99,43"
           Id="Package\Load Table Season\Sort"
           TopLeft="162.333328495423,155.999995350838" />
         <NodeLayout
-          Size="113.333333333334,42.6666666666667"
+          Size="113,43"
           Id="Package\Load Table Season\Lookup"
           TopLeft="289.999991357327,442.666653474172" />
         <EdgeLayout
@@ -6338,7 +7583,9 @@ where [refTable].[Name] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -6360,7 +7607,9 @@ where [refTable].[Name] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -6394,7 +7643,9 @@ where [refTable].[Name] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -6428,7 +7679,9 @@ where [refTable].[Name] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -6450,7 +7703,9 @@ where [refTable].[Name] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -6508,7 +7763,9 @@ where [refTable].[Name] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
